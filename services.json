@@ -1,0 +1,38 @@
+[
+      {
+            "title": "Wiring",
+            "img": "https://i.ibb.co/pd2LjHj/wiring.png",
+            "details": "I can do electrical wiring of your house or office. I also can fix your damage wiring. During wiring I always follow local building regulations. On the wiring job it also includes connecting lights/fans. At first I draw the wiring diagram. Then I do the wiring.",
+            "price": 500
+      },
+      {
+            "title": "Troubleshoot",
+            "img": "https: //i.ibb.co/RYzp60Z/troubleshoot.png",
+            "details": "Troubleshooting is a very important task. During trobleshooting I follow some steps. Like, gather the information, understand the malfunction, identify the source of the problem, repair the component, verify the repair.",
+            "price": 500
+      },
+      {
+            "title": "Install Appliances",
+            "img": "https: //i.ibb.co/3FbKjng/install-appliances.png",
+            "details": "During installing a appliance I always maintain top class safety. Because you spend a lot of money to buy any appliance. It's my job to respect your hard earned money.",
+            "price": 100
+      },
+      {
+            "title": "Replace Components",
+            "img": "https: //i.ibb.co/sCCnZyn/replace-appliances.png",
+            "details": "I can replace or repair your damage components. I can do these tasks within a very short time.",
+            "price": 100
+      },
+      {
+            "title": "Maintenance System",
+            "img": "https: //i.ibb.co/16bQrd8/Maintenance-System.png",
+            "details": "After installing any electrical or electronics components it needs maintenance. I can do these task regularly. Whenever you call me I will always there.",
+            "price": 300
+      },
+      {
+            "title": "Inspecting Components",
+            "img": "https: //i.ibb.co/8bgFP4M/inspecting.png",
+            "details": "After install or repair any components it's really important to inspect. By inspection I can verify that the component is working fine.",
+            "price": 200
+      }
+]
