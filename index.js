@@ -50,7 +50,7 @@ async function run() {
             });
 
 
-
+            //get review by service
             app.get('/reviews', async (req, res) => {
                   let query = {};
                   if (req.query.serviceId) {
@@ -63,12 +63,18 @@ async function run() {
                   res.send(review)
             });
 
-            app.get('/reviews/:id', async (req, res) => {
-                  const id = req.params.id;
-                  const query = { _id: ObjectId(id) }
-                  const result = await reviewCollection.findOne(query);
-                  res.send(result)
-            });
+            //get by email
+            app.get('/clientReviews', async (req, res) => {
+                  let query = {};
+                  if (req.query.clientEmail) {
+                        query = {
+                              clientEmail: req.query.clientEmail
+                        }
+                  }
+                  const cursor = reviewCollection.find(query);
+                  const review = await cursor.toArray();
+                  res.send(review)
+            })
 
             app.post('/addreviews', async (req, res) => {
                   const review = req.body;
@@ -82,11 +88,19 @@ async function run() {
                   res.send(review)
             })
 
+            app.get('/reviews/:id', async (req, res) => {
+                  const id = req.params.id;
+                  const query = { _id: ObjectId(id) };
+                  const result = await reviewCollection.findOne(query);
+                  res.send(result)
+            })
+
+            //delete review
             app.delete('/reviews/:id', async (req, res) => {
                   const id = req.params.id;
                   const query = { _id: ObjectId(id) };
                   const result = await reviewCollection.deleteOne(query);
-                  res.send(result)
+                  res.send(result);
             })
 
 
